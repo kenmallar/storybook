@@ -1,0 +1,33 @@
+@mixin button-palette($object, $name: "button") {
+  @each $key, $value in $object {
+    $property: $value;
+    $variant: $key;
+
+    @if $variant == base {
+      @each $key, $value in $property {
+        --#{$name}-#{$key}-color: var(#{$value});
+      }
+    }
+
+    @if $variant == hover {
+      @media (hover: hover) {
+        // stylelint-disable-next-line plugin/stylelint-bem-namics
+        &.h-hover,
+        &:hover:not(.c-#{$name}--disabled) {
+          @each $key, $value in $property {
+            --#{$name}-#{$key}-color: var(#{$value});
+          }
+        }
+      }
+    }
+
+    @if $variant == disabled {
+      // stylelint-disable-next-line plugin/stylelint-bem-namics
+      &.c-#{$name}--disabled {
+        @each $key, $value in $property {
+          --#{$name}-#{$key}-color: var(#{$value});
+        }
+      }
+    }
+  }
+}

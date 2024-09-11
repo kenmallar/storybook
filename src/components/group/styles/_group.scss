@@ -1,0 +1,64 @@
+@use "~sass-mq" as *;
+
+.c-group {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: var(--group-gap) var(--group-gap);
+
+  &--fit-content {
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+    width: fit-content;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+
+    @include mq($until: mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &--grow > * {
+    flex-grow: 1;
+  }
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
+
+  &--apart {
+    justify-content: space-between;
+  }
+
+  &--space-around {
+    justify-content: space-around;
+  }
+
+  &--align-start {
+    align-items: flex-start;
+  }
+
+  &--align-center {
+    align-items: center;
+  }
+
+  &--align-end {
+    align-items: flex-end;
+  }
+
+  // NOTE: in order to automatically make the divider take all the <Group />height,
+  // we overwrite the c-divider--vertical variation to match the flex display rules.
+  .c-divider--vertical {
+    height: inherit;
+    align-self: stretch;
+  }
+}

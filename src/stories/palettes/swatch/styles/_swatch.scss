@@ -1,0 +1,13 @@
+.c-swatch {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__name {
+    text-transform: capitalize;
+  }
+
+  &:first-child {
+    margin-bottom: 16px;
+  }
+}

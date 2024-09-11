@@ -1,0 +1,20 @@
+@use "~sass-rem" as *;
+
+html {
+  --spacing-0: 0;
+  --spacing-05: #{rem(2px)};
+  --spacing-1: #{rem(4px)};
+  --spacing-2: #{rem(8px)};
+  --spacing-3: #{rem(12px)};
+  --spacing-4: #{rem(16px)};
+  --spacing-5: #{rem(20px)};
+  --spacing-6: #{rem(24px)};
+  --spacing-7: #{rem(28px)};
+  --spacing-8: #{rem(32px)};
+  --spacing-10: #{rem(40px)};
+  --spacing-12: #{rem(48px)};
+  --spacing-16: #{rem(64px)};
+  --spacing-20: #{rem(80px)};
+  --spacing-24: #{rem(96px)};
+  --spacing-31: #{rem(128px)};
+}

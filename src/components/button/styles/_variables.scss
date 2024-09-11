@@ -1,0 +1,114 @@
+@use "~sass-rem" as *;
+@use "../../../styles/core/mixins" as *;
+
+$primary: (
+  base: (
+    text: --color-white,
+    bg: --color-highlight-200,
+  ),
+  hover: (
+    bg: --color-highlight-400,
+  ),
+  disabled: (
+    text: --color-primary-500,
+    bg: --color-primary-600,
+  ),
+  loading: (
+    text: --color-primary-500,
+    bg: --color-primary-600,
+  ),
+);
+
+$secondary: (
+  base: (
+    text: --color-highlight-100,
+    bg: --transparent,
+    border: --color-highlight-100,
+  ),
+  hover: (
+    text: --color-white,
+    bg: --color-highlight-200,
+    border: --color-highlight-200,
+  ),
+  disabled: (
+    text: --color-primary-500,
+    border: --color-primary-500,
+  ),
+  loading: (
+    text: --color-primary-500,
+    border: --color-primary-500,
+  ),
+);
+
+$tertiary: (
+  base: (
+    text: --color-primary-400,
+    border: --color-secondary-600,
+    bg: --transparent,
+  ),
+  hover: (
+    text: --color-white,
+    border: --color-primary-400,
+    bg: --color-primary-400,
+  ),
+  disabled: (
+    text: --color-secondary-600,
+    border: --color-secondary-700,
+    bg: --transparent,
+  ),
+  loading: (
+    text: --color-secondary-600,
+    border: --color-secondary-700,
+    bg: --transparent,
+  ),
+);
+
+.c-button {
+  --button-text-size: #{rem(12px)};
+  --button-text-letter-spacing: 0;
+
+  &--primary {
+    @include button-palette($primary);
+  }
+
+  // KINDS
+  &--secondary {
+    @include button-palette($secondary);
+  }
+
+  &--tertiary {
+    @include button-palette($tertiary);
+  }
+
+  // SIZES
+  &--xlarge {
+    --button-height: #{rem(64px)};
+    --button-padding: #{rem(18px 24px)};
+    --button-text-size: #{rem(20px)};
+  }
+
+  &--large {
+    --button-height: #{rem(56px)};
+    --button-text-size: #{rem(18px)};
+    --button-padding: #{rem(18px 24px)};
+  }
+
+  &--medium {
+    --button-height: #{rem(48px)};
+    --button-padding: #{rem(16px 24px)};
+
+    --button-text-size: #{rem(16px)};
+  }
+
+  &--small {
+    --button-height: #{rem(40px)};
+    --button-padding: #{rem(12px 16px)};
+    --button-text-size: #{rem(14px)};
+  }
+
+  &--xsmall {
+    --button-height: #{rem(32px)};
+    --button-padding: #{rem(8px 12px)};
+    --button-text-size: #{rem(12px)};
+  }
+}

@@ -1,0 +1,26 @@
+.c-color {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &__sample {
+    width: 70px;
+    height: 40px;
+    padding: 0;
+    border-radius: 25px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__value {
+    font-size: 14px;
+  }
+}

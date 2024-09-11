@@ -1,0 +1,56 @@
+.DS_Store
+dist
+lib
+public
+.env
+*.log
+
+# build
+*.tsbuildinfo
+
+# NPM and Yarn
+node_modules
+npm-debug.log*
+package-lock.json
+yarn-debug.log*
+yarn-error.log*
+
+# yarn modern
+**/.pnp.*
+**/.yarn/*
+!**/.yarn/patches
+!**/.yarn/plugins
+!**/.yarn/releases
+!**/.yarn/sdks
+!**/.yarn/versions
+
+# tests and code coverage
+coverage
+jest-test-results.json
+.nyc_output
+test-results.xml
+*-test-results.xml
+
+# storybook
+storybook-static
+storybook-static-*
+
+# VSCode
+packages/**/.vscode
+automated-tests/backend/reports
+tools/qa/.env.prod.*
+
+# Don't commit chart dependencies
+.k8s/resolve/charts/*
+
+# Cypress test results medias
+automated-tests/frontend/cypress/screenshots
+automated-tests/frontend/cypress/videos
+
+# history
+.history/
+
+# Cache gitlab
+cache-archive.tar.gz
+
+*storybook.log

@@ -1,0 +1,63 @@
+@use "~sass-rem" as *;
+
+.c-group--gap {
+  &-0 {
+    --group-gap: var(--spacing-0);
+  }
+
+  &-05 {
+    --group-gap: var(--spacing-05);
+  }
+
+  &-1 {
+    --group-gap: var(--spacing-1);
+  }
+
+  &-2 {
+    --group-gap: var(--spacing-2);
+  }
+
+  &-3 {
+    --group-gap: var(--spacing-3);
+  }
+
+  &-4 {
+    --group-gap: var(--spacing-4);
+  }
+
+  &-5 {
+    --group-gap: var(--spacing-5);
+  }
+
+  &-6 {
+    --group-gap: var(--spacing-6);
+  }
+
+  &-8 {
+    --group-gap: var(--spacing-8);
+  }
+
+  &-10 {
+    --group-gap: var(--spacing-10);
+  }
+
+  &-12 {
+    --group-gap: var(--spacing-12);
+  }
+
+  &-16 {
+    --group-gap: var(--spacing-16);
+  }
+
+  &-20 {
+    --group-gap: var(--spacing-20);
+  }
+
+  &-24 {
+    --group-gap: var(--spacing-24);
+  }
+
+  &-31 {
+    --group-gap: var(--spacing-31);
+  }
+}

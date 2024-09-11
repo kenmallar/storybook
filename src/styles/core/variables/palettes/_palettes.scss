@@ -1,0 +1,41 @@
+html {
+  --color-white: rgb(var(--color-white--string));
+  --color-black: rgb(var(--color-black--string));
+
+  --color-primary-900: rgb(var(--color-primary-900--string));
+  --color-primary-800: rgb(var(--color-primary-800--string));
+  --color-primary-700: rgb(var(--color-primary-700--string));
+  --color-primary-600: rgb(var(--color-primary-600--string));
+  --color-primary-500: rgb(var(--color-primary-500--string));
+  --color-primary-400: rgb(var(--color-primary-400--string));
+  --color-primary-300: rgb(var(--color-primary-300--string));
+  --color-primary-200: rgb(var(--color-primary-200--string));
+  --color-primary-100: rgb(var(--color-primary-100--string));
+  --color-primary-50: rgb(var(--color-primary-50--string));
+
+  --color-secondary-900: rgb(var(--color-secondary-900--string));
+  --color-secondary-800: rgb(var(--color-secondary-800--string));
+  --color-secondary-700: rgb(var(--color-secondary-700--string));
+  --color-secondary-600: rgb(var(--color-secondary-600--string));
+  --color-secondary-500: rgb(var(--color-secondary-500--string));
+  --color-secondary-400: rgb(var(--color-secondary-400--string));
+  --color-secondary-300: rgb(var(--color-secondary-300--string));
+  --color-secondary-200: rgb(var(--color-secondary-200--string));
+  --color-secondary-100: rgb(var(--color-secondary-100--string));
+  --color-secondary-50: rgb(var(--color-secondary-50--string));
+
+  --color-tertiary-900: rgb(var(--color-tertiary-900--string));
+  --color-tertiary-800: rgb(var(--color-tertiary-800--string));
+  --color-tertiary-700: rgb(var(--color-tertiary-700--string));
+  --color-tertiary-600: rgb(var(--color-tertiary-600--string));
+  --color-tertiary-500: rgb(var(--color-tertiary-500--string));
+  --color-tertiary-400: rgb(var(--color-tertiary-400--string));
+  --color-tertiary-300: rgb(var(--color-tertiary-300--string));
+  --color-tertiary-200: rgb(var(--color-tertiary-200--string));
+  --color-tertiary-100: rgb(var(--color-tertiary-100--string));
+  --color-tertiary-50: rgb(var(--color-tertiary-50--string));
+
+  --color-success: rgb(var(--color-success--string));
+  --color-warning: rgb(var(--color-warning--string));
+  --color-error: rgb(var(--color-error--string));
+}
